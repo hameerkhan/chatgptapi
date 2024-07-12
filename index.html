@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Application with Features</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="chat-container">
+            <div id="chatArea" class="chat-area"></div>
+            <div class="input-container">
+                <input type="text" id="textInput" class="input-field" placeholder="Type your message...">
+                <input type="file" id="fileInput" class="file-input" accept="image/*, .pdf, .doc, .docx">
+                <button id="sendButton" class="send-button">Send</button>
+                <div id="formattingOptions" class="formatting-options">
+                    <button class="format-button" data-format="bold"><b>B</b></button>
+                    <button class="format-button" data-format="italic"><i>I</i></button>
+                    <button class="format-button" data-format="underline"><u>U</u></button>
+                    <button class="format-button" data-format="code">Code</button>
+                </div>
+            </div>
+            <div class="button-container">
+                <button id="clearButton" class="clear-button">Clear Chat</button>
+                <button id="emojiButton" class="emoji-button">😊</button>
+                <button id="helpButton" class="help-button">ℹ️ Help</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

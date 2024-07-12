@@ -1,0 +1,117 @@
+/* Basic styling for chat container and messages */
+.chat-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.chat-area {
+    height: 300px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.message {
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 6px;
+    clear: both;
+    overflow-wrap: break-word;
+}
+
+.user .message-content {
+    background-color: #f0f0f0;
+    float: right;
+}
+
+.bot .message-content {
+    background-color: #e6f2ff;
+    float: left;
+}
+
+.message-time {
+    font-size: 12px;
+    color: #999;
+    margin-top: 4px;
+}
+
+/* Styling for input field, buttons, and formatting options */
+.input-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.input-field {
+    flex: 1;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.file-input {
+    display: none; /* Hide file input by default */
+}
+
+.send-button {
+    margin-left: 10px;
+    padding: 8px 16px;
+    font-size: 14px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.formatting-options {
+    margin-left: 10px;
+}
+
+.format-button {
+    margin-right: 6px;
+    padding: 6px 8px;
+    font-size: 14px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.format-button.active {
+    background-color: #e6e6e6;
+}
+
+.clear-button, .emoji-button, .help-button {
+    margin-right: 10px;
+    padding: 8px 16px;
+    font-size: 14px;
+    background-color: #ddd;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.error-message {
+    margin-bottom: 10px;
+    padding: 8px;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    border-radius: 4px;
+    color: #721c24;
+}
